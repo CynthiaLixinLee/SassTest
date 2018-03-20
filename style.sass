@@ -1,0 +1,49 @@
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+// VARIABLES
+$black: #333
+$white: #fff
+$sheer: rgba(255, 255, 255, 0.5)
+$font-stack: "Andale Mono", monospace
+$font-size: 16px
+$bbox: border-box
+
+//MIXINS
+=boxShape($rad, $sizing, $height, $width, $bg, $color)
+  -webkit-border-radius:  $rad
+  -moz-border-radius:     $rad
+  -ms-border-radius:      $rad
+  border-radius:          $rad
+
+  box-sizing:   $sizing
+  height:       $height
+  width:        $width
+  text-align:   center
+
+  background: $bg
+  color:      $color
+  margin:     50px auto
+  padding:     30px
+
+// STYLES
+html
+  background-image: url(http://wallpaper-gallery.net/images/forest-hd-wallpapers/forest-hd-wallpapers-23.jpg)
+  font-family: $font-stack
+
+.box
+  +boxShape(5px, $bbox, 250px, 750px, $sheer, $black)
+  h1
+    font-size: $font-size + 12
+
+.box2
+  +boxShape(20px, $bbox, 300px, 550px, $black, $white)
+  h2
+    font-size: $font-size + 4
+
+footer
+  margin: 15px auto 30px auto
+  font-size: $font-size - 4
+  color: $white

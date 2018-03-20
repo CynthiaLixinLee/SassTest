@@ -1,0 +1,46 @@
+html {
+  background-image: url(http://wallpaper-gallery.net/images/forest-hd-wallpapers/forest-hd-wallpapers-23.jpg);
+  font-family: "Andale Mono", monospace;
+}
+
+.box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 250px;
+  width: 750px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  color: #333;
+  margin: 50px auto;
+  padding: 30px;
+}
+.box h1 {
+  font-size: 28px;
+}
+
+.box2 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 300px;
+  width: 550px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  margin: 50px auto;
+  padding: 30px;
+}
+.box2 h2 {
+  font-size: 20px;
+}
+
+footer {
+  margin: 15px auto 30px auto;
+  font-size: 12px;
+  color: #fff;
+}
